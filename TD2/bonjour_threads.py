@@ -77,7 +77,7 @@ def main(argv=None):
     done_queue = Queue()
 
     with open(working_dir+argv[1], 'r') as f:
-    #Dites bonjour a chaque personne de fichier
+    #Dites bonjour a chaque personne du fichier
         for ligne in f:
            if ligne[0:2] == "M.":
                TASKS1.append((dites_bonjour, (ligne.strip(' \r\n'))))
@@ -106,7 +106,7 @@ def main(argv=None):
         logging.info(tasks2)
         task_queue.put(tasks2)
 
-    # Get and print some more results => afficher done_queue
+    # Afficher done_queue
     for i in range(len(TASKS2)):
         print done_queue.get()     
 
