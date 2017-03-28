@@ -1,10 +1,3 @@
-"""
-Le premier prgramme en Python
-@author Dragos STOICA
-@version 0.2
-@date 16.feb.2014
-"""
-
 import sys
 
 def dites_bonjour(personne):
