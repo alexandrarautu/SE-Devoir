@@ -4,10 +4,6 @@ Le premier prgramme en Python
 * les listes et la fonction map
 * les threads
 * le logger
-
-@author Dragos STOICA
-@version 0.4
-@date 16.feb.2014
 """
 
 import sys, threading, logging, os
