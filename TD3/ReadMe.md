@@ -5,7 +5,7 @@ Explications:
 J'ai réalisé un chat client - serveur où un max de 5 clients peuvent se connecter et parler. 
 C'est un chat en temps réels, qui affiche les message de chaque client. 
 Pour l'utiliser il faut commencer le serveur premièrement: 'python time_server.py' 
-Après il faut ouvrir d'autres fenêtres de terminal pour commencer l'utilisation du chat pour un client: 'python time_client.py localhost 6666'
+Après il faut ouvrir d'autres fenêtres de terminal pour commencer l'utilisation du chat pour des clients: 'python time_client.py localhost 6666' (6666 c'est le port)
 Après la connexion le chat commence et vous pouvez envoyer des messages.
 Pour se déconnecter il faut soit fermer le terminal ou appuyez "ctrl + C" dans le terminal. 
 
