@@ -1,4 +1,4 @@
-#Devoir 3 - chat client - serveur
+# Devoir 3 - chat client - serveur
 
 J'ai réalisé un chat client - serveur où un max de 5 clients peuvent se connecter et parler. 
 C'est un chat en temps réels, qui affiche les message de chaque client. 
