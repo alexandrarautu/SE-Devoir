@@ -1,4 +1,4 @@
-#Devoir 4: Cryptage - Decrpytage de Caesar
+# Devoir 4: Cryptage - Decrpytage de Caesar
 
 Le code corresponde au Issue 2: Devoir 4 - 20.04.2017
 
