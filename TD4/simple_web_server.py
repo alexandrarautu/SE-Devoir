@@ -59,7 +59,7 @@ class myHandler(BaseHTTPRequestHandler):
 		                 'CONTENT_TYPE':self.headers['Content-Type'],
 			})
 
-            crypt_text = cryptage_caesar(form["le_texte"].value, 3) #On prend le text du index.html pour le crypter.
+            		crypt_text = cryptage_caesar(form["le_texte"].value, 3) #On prend le text du index.html pour le crypter.
 			self.nsa_queue.put(crypt_text) #On ajoute le texte dans la fille d'attente pour qu'il peuve etre decrypte. 
 			print "Le texte en clair: %s" % form["le_texte"].value
 			self.send_response(200)
@@ -69,7 +69,7 @@ class myHandler(BaseHTTPRequestHandler):
 
 		if self.path=="/decrypt":
 			le_texte = self.nsa_queue.get() #On prend le texte de la fille d'attente pour le decrypter.
-            decryptage = decryptage_caesar(le_texte, 3) #On fait le decrpytage du texte 
+            		decryptage = decryptage_caesar(le_texte, 3) #On fait le decrpytage du texte 
 			print "Le texte en encode: %s" % le_texte
 			self.send_response(200)
 			self.end_headers()
